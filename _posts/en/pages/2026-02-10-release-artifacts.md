@@ -13,7 +13,7 @@ Bitcoin Core release files are hosted at [https://bitcoincore.org/bin/](https://
 ## Build Suffixes
 
 - **Standard Binaries** (`.tar.gz`, `.zip`, `-setup.exe`): Production-ready binaries for general use.
-- **`-debug`**: Includes symbols for backtrace generation. Larger file size and reduced performance.
+- **`-debug`**: Debug symbols split from the standard binaries, for use in backtrace generation.
 - **`-unsigned`**: Raw Guix build outputs. Used to audit reproducibility against signed releases.
 - **`-codesigning`**: Intermediate artifacts for macOS/Windows signing ceremonies. Not for end-users.
 - **Source**: `bitcoin-<version>.tar.gz` (no platform string). For manual compilation.
