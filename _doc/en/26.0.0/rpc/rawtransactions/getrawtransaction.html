@@ -99,11 +99,11 @@ Result (for verbosity = 2):
 }
 
 Examples:
-> bitcoin-cli getrawtransaction "mytxid"
-> bitcoin-cli getrawtransaction "mytxid" 1
+> aixcoin-cli getrawtransaction "mytxid"
+> aixcoin-cli getrawtransaction "mytxid" 1
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getrawtransaction", "params": ["mytxid", 1]}' -H 'content-type: text/plain;' http://127.0.0.1:8332/
-> bitcoin-cli getrawtransaction "mytxid" 0 "myblockhash"
-> bitcoin-cli getrawtransaction "mytxid" 1 "myblockhash"
-> bitcoin-cli getrawtransaction "mytxid" 2 "myblockhash"
+> aixcoin-cli getrawtransaction "mytxid" 0 "myblockhash"
+> aixcoin-cli getrawtransaction "mytxid" 1 "myblockhash"
+> aixcoin-cli getrawtransaction "mytxid" 2 "myblockhash"
 
 

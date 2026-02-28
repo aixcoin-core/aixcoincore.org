@@ -58,7 +58,7 @@ outputs                        (json array, optional, default=[]) The outputs sp
                                Cannot be provided if 'original_change_index' is specified.
      [
        {                       (json object)
-         "address": amount,    (numeric or string, required) A key-value pair. The key (string) is the bitcoin address,
+         "address": amount,    (numeric or string, required) A key-value pair. The key (string) is the aixcoin address,
                                the value (float or string) is the amount in BTC
          ...
        },
@@ -83,6 +83,6 @@ Result:
 Examples:
 
 Bump the fee, get the new transaction's psbt
-> bitcoin-cli psbtbumpfee <txid>
+> aixcoin-cli psbtbumpfee <txid>
 
 

@@ -16,10 +16,10 @@ true|false    (boolean) Whether the abort was successful
 Examples:
 
 Import a private key
-> bitcoin-cli rescanblockchain 
+> aixcoin-cli rescanblockchain 
 
 Abort the running wallet rescan
-> bitcoin-cli abortrescan 
+> aixcoin-cli abortrescan 
 
 As a JSON-RPC call
 > curl --user myusername --data-binary '{"jsonrpc": "2.0", "id": "curltest", "method": "abortrescan", "params": []}' -H 'content-type: application/json' http://127.0.0.1:8332/

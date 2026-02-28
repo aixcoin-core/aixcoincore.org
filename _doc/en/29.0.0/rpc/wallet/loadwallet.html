@@ -8,7 +8,7 @@ permalink: en/doc/29.0.0/rpc/wallet/loadwallet/
 loadwallet "filename" ( load_on_startup )
 
 Loads a wallet from a wallet file or directory.
-Note that all wallet command-line options used when starting bitcoind will be
+Note that all wallet command-line options used when starting aixcoind will be
 applied to the new wallet.
 
 Arguments:
@@ -27,15 +27,15 @@ Result:
 Examples:
 
 Load wallet from the wallet dir:
-> bitcoin-cli loadwallet "walletname"
+> aixcoin-cli loadwallet "walletname"
 > curl --user myusername --data-binary '{"jsonrpc": "2.0", "id": "curltest", "method": "loadwallet", "params": ["walletname"]}' -H 'content-type: application/json' http://127.0.0.1:8332/
 
 Load wallet using absolute path (Unix):
-> bitcoin-cli loadwallet "/path/to/walletname/"
+> aixcoin-cli loadwallet "/path/to/walletname/"
 > curl --user myusername --data-binary '{"jsonrpc": "2.0", "id": "curltest", "method": "loadwallet", "params": ["/path/to/walletname/"]}' -H 'content-type: application/json' http://127.0.0.1:8332/
 
 Load wallet using absolute path (Windows):
-> bitcoin-cli loadwallet "DriveLetter:\path\to\walletname\"
+> aixcoin-cli loadwallet "DriveLetter:\path\to\walletname\"
 > curl --user myusername --data-binary '{"jsonrpc": "2.0", "id": "curltest", "method": "loadwallet", "params": ["DriveLetter:\path\to\walletname\"]}' -H 'content-type: application/json' http://127.0.0.1:8332/
 
 

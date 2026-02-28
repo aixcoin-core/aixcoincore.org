@@ -1,10 +1,10 @@
-// This is a golang script, needed for generating the RPC bitcoin documentation
+// This is a golang script, needed for generating the RPC aixcoin documentation
 //
 // What is necessary to run this:
 // (1) install golang
-// (2) install bitcoin core, set it up to use regtest
-// (3) run bitcoind
-// (4) run this script with `go run generate.go` while being in contrib/doc-gen, and with bitcoin-cli in PATH
+// (2) install aixcoin core, set it up to use regtest
+// (3) run aixcoind
+// (4) run this script with `go run generate.go` while being in contrib/doc-gen, and with aixcoin-cli in PATH
 // (5) add the generated files to git
 package main
 
@@ -19,7 +19,7 @@ import (
 	"text/template"
 )
 
-const BITCOIN_COMMAND = "bitcoin-cli"
+const BITCOIN_COMMAND = "aixcoin-cli"
 const BITCOIN_CHAINOPTION = "-regtest"
 
 type Command struct {
@@ -162,7 +162,7 @@ func run(args ...string) string {
 	args = append([]string{BITCOIN_CHAINOPTION}, args...)
 	out, err := exec.Command(BITCOIN_COMMAND, args...).CombinedOutput()
 	if err != nil {
-		log.Fatalf("Cannot run bitcoin-cli: %s, is bitcoind (regtest) running?", err.Error())
+		log.Fatalf("Cannot run aixcoin-cli: %s, is aixcoind (regtest) running?", err.Error())
 	}
 
 	return string(out)

@@ -1,4 +1,4 @@
-# [bitcoincore.org](https://bitcoincore.org)
+# [aixcoincore.org](https://aixcoincore.org)
 
 This repository is the source code of the Bitcoin Core project website built with Jekyll.
 
@@ -46,8 +46,8 @@ packages, [rvm](https://rvm.io), [rbenv](https://github.com/rbenv/rbenv), or ano
 alternative is to use Docker, for which instructions are available [here](./contrib/devtools/).
 Then clone this repository and change directory into it:
 
-    git clone https://github.com/bitcoin-core/bitcoincore.org.git
-    cd bitcoincore.org
+    git clone https://github.com/aixcoin-core/aixcoincore.org.git
+    cd aixcoincore.org
 
 Install the `bundle` utility using the Ruby package manager, `gem`, and
 then use `bundle` to install the rest of the Ruby packages needed to
