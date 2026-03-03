@@ -19,8 +19,8 @@ import (
 	"text/template"
 )
 
-const BITCOIN_COMMAND = "aixcoin-cli"
-const BITCOIN_CHAINOPTION = "-regtest"
+const AIXCOIN_COMMAND = "aixcoin-cli"
+const AIXCOIN_CHAINOPTION = "-regtest"
 
 type Command struct {
 	Name        string
@@ -159,8 +159,8 @@ func open(path string) io.Writer {
 }
 
 func run(args ...string) string {
-	args = append([]string{BITCOIN_CHAINOPTION}, args...)
-	out, err := exec.Command(BITCOIN_COMMAND, args...).CombinedOutput()
+	args = append([]string{AIXCOIN_CHAINOPTION}, args...)
+	out, err := exec.Command(AIXCOIN_COMMAND, args...).CombinedOutput()
 	if err != nil {
 		log.Fatalf("Cannot run aixcoin-cli: %s, is aixcoind (regtest) running?", err.Error())
 	}
